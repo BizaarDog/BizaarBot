@@ -42,5 +42,11 @@ client.on('message', message => {
   	}
 });
 
+client.on('message', message => {
+    if (message.content === 'yes I did call for you bizaarbot') {
+    	message.channel.send('What do you want? Im trying to poop');
+  	}
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
