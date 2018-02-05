@@ -18,7 +18,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'hi') {
+    if (message.content === 'hi bizaarbot') {
     	message.channel.send('Hello');
   	}
 });
